@@ -6,8 +6,8 @@
             "port": 5432,
             "askForPassword": true,
             "driver": "PostgreSQL",
-            "connectString": "",
-            "name": "Garage"
+            "name": "Garage",
+            "connectString": "postgres://jnvagyyg:C3gxNtdtSKk_PYEZdpzQxN7BN3eZDW3r@castor.db.elephantsql.com/jnvagyyg"
         }
     ]
 }

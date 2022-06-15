@@ -19,8 +19,8 @@ INSERT INTO salesperson(first_name, last_name) VALUES
     ('Eduard', 'Zeller'),
     ('David', 'Cassel');
 
-INSERT INTO service (car_id, customer_id, service_type, part_replaced, amount) VALUES
-    (1, 5, NULL, NULL, 00.00),
+INSERT INTO "service" (service_id, customer_id, service_type, part_replaced, amount) VALUES
+    (1, 5, 'Estimate', NULL, 00.00),
     (2, 4, 'New Tyres', 'Tyres', 200.00),
     (3, 3, 'New windshield', 'Windshield', 300.64),
     (4, 2, 'Oil change', 'Oil', 30.00),
@@ -33,6 +33,13 @@ INSERT INTO invoice(car_id, salesperson_id, customer_id, amount) VALUES
     (5, 2, 4, 18000.00),
     (1, 1, 5, 22000.00);
 
+INSERT INTO mechanic(first_name, last_name) VALUES
+    ('Albert', 'Camus'),
+    ('Betrand', 'Russell'),
+    ('John', 'Locke'),
+    ('Jeremy', 'Bentham'),
+    ('Thomas', 'Hobbes');
+
 INSERT INTO service_mechanic (mechanic_id, service_id) VALUES
     (3, 5),
     (4, 3),
@@ -40,10 +47,3 @@ INSERT INTO service_mechanic (mechanic_id, service_id) VALUES
     (1, 1),
     (5, 1),
     (2, 4);
-
-INSERT INTO mechanic(first_name, last_name) VALUES
-    ('Albert', 'Camus'),
-    ('Betrand', 'Russell'),
-    ('John', 'Locke'),
-    ('Jeremy', 'Bentham'),
-    ('Thomas', 'Hobbes');

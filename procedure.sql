@@ -16,6 +16,6 @@ END;
 $$
 LANGUAGE plpgsql;
 
-SELECT new_service(1, 3, 'Replacement wipers', 'Wipers', 20.00)
-SELECT * FROM service WHERE service_id = 3;
-DROP FUNCTION new_service;
+--SELECT new_service(1, 3, 2, 'Replacement wipers', 'Wipers', 20.00)
+--SELECT * FROM service WHERE service_id = 3;
+--DROP FUNCTION new_service;
